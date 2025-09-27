@@ -133,7 +133,7 @@ export default function Home() {
                 />
               </div>
               <p className="text-gray-600 italic text-center max-w-3xl mx-auto">
-                "El aprendizaje es un viaje que nunca termina. Cada paciente, cada sesión, es una nueva oportunidad para crecer."
+              &ldquo;El aprendizaje es un viaje que nunca termina. Cada paciente, cada sesión, es una nueva oportunidad para crecer.&rdquo;
               </p>
             </div>
           </div>
@@ -148,7 +148,7 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold text-gray-700 mb-4">
                 <span className="text-primary">Método</span> Shiatsu Biodinámico®
               </h2>
-              <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
+              <div className="w-24 h-1 bg-primary mx-auto mb-6 rounded-full"></div>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                 Una propuesta que integra cuerpo, emoción y energía en un abordaje profundo y respetuoso.
               </p>
@@ -175,7 +175,7 @@ export default function Home() {
             
             <div className="bg-primaryWithOp2 p-8 rounded-2xl text-center">
               <p className="text-xl text-gray-700 mb-6 italic">
-                "Mi trabajo se basa en la escucha, la presencia y el compromiso con el bienestar integral."
+              &ldquo;Mi trabajo se basa en la escucha, la presencia y el compromiso con el bienestar integral.&rdquo;
               </p>
               <div className="flex items-center justify-center space-x-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden">

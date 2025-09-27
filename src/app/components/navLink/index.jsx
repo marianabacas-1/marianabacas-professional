@@ -21,7 +21,7 @@ function NavLinkContent({ text, to }) {
       className={`hidden md:inline-flex items-center justify-center tracking-wide mx-0.5
         px-5 py-2 rounded-lg transition-all duration-200
         ${isActive 
-          ? "bg-gradient-to-r from-primaryWithOp to-primaryWithOp2 text-white shadow-lg"
+          ? "bg-gradient-to-r from-primary to-primaryWithOp text-gray-700 shadow-lg"
           : "bg-transparent text-gray-900 hover:bg-gradient-to-r hover:from-primaryWithOp hover:to-primaryWithOp2 hover:text-white hover:shadow-lg"
         }`}
     >

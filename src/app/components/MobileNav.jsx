@@ -31,10 +31,10 @@ export default function MobileNav() {
     router.push('/login');
   }
 
-  const navbarItems = [{itemName: 'Inicio', href: '/'}, {itemName: 'Accesorios', href: '/products?category=accesorios'}, {itemName: 'Electronica', href: '/products?category=electronica'}, {itemName: 'Regalos', href: '/products?category=regalos'}, {itemName: 'Contacto', href: '/contact'}]
+  const navbarItems = [{itemName: 'Inicio', href: '/'}, {itemName: 'Shiatsu Biodinámico', href: '/shiatsu-biodinamico'}, {itemName: 'Escuela Virtual', href: '/escuela-virtual'}, {itemName: 'Contacto', href: '/contact'}]
 
   const list = (anchor) => (
-      <div className="bg-secondary py-4 px-4">
+      <div className="bg-gradient-to-r from-white via-secondary to-primary py-4 px-4">
         <Box
           sx={{ width: anchor === 'Menú' ? 'auto' : 250, minWidth: '100%', }}
           role="presentation"
@@ -47,9 +47,9 @@ export default function MobileNav() {
               className="basis-1/3 flex justify-start items-center"
             >
               <Image
-                alt="Logo Mi Celu"
-                src="/mi_celu.png"
-                width={60}
+                alt="Logo mariana bacas"
+                src="/mariana_bacas_recortada.png"
+                width={150}
                 height={60}
               />
             </Link>
@@ -58,7 +58,7 @@ export default function MobileNav() {
               onClick={toggleDrawer('Menú', true)}
               className="basis-1/3 flex justify-end"
             >
-              <MenuIcon style={{ color: 'rgba(150, 29, 112, 1)' }} />
+              <MenuIcon style={{ color: 'rgba( 255, 255, 255, 1)' }} />
             </button>
           </div>
             <List>
@@ -85,9 +85,9 @@ export default function MobileNav() {
               className="basis-1/3 flex justify-start items-center"
             >
               <Image
-                alt="Logo Mi Celu"
-                src="/mi_celu.png"
-                width={60}
+                alt="Logo mariana bacas"
+                src="/mariana_bacas_recortada.png"
+                width={150}
                 height={60}
               />
             </Link>

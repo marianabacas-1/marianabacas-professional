@@ -49,6 +49,7 @@ const Navbar = () => {
           <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 flex flex-wrap items-center text-gray-700 justify-center">
             <NavLink to="/" text="Inicio" />
             <NavLink to="/shiatsu-biodinamico" text="Shiatsu Biodinámico" />
+            <NavLink to="/escuela-presencial" text="Escuela Presencial" />
             <NavLink to="/escuela-virtual" text="Escuela Virtual" />
             <NavLink to="/contact" text="Contacto" />
           </nav>

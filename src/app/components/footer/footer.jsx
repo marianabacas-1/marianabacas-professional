@@ -20,6 +20,7 @@ const Footer = () => {
           <ul className="mt-2 space-y-2">
             <FooterMenuItem href="/" item="Inicio" />
             <FooterMenuItem href="/shiatsu-biodinamico" item="Shiatsu Biodinámico" />
+            <FooterMenuItem href="/escuela-presencial" item="Escuela Presencial" />
             <FooterMenuItem href="/escuela-virtual" item="Escuela Virtual" />
             <FooterMenuItem href="/contact" item="Contacto" />
           </ul>
@@ -28,7 +29,7 @@ const Footer = () => {
           <h2 className="text-xl font-semibold">Contacto</h2>
           <p className="text-sm mt-2">Correo: marianabacas1@gmail.com</p>
           <p className="flex items-center gap-3 text-sm">
-            Teléfono: +54 9 1111111111
+            Teléfono: +549 11 6357 3328
           </p>
           <div className="flex space-x-4 mt-4">
             <a

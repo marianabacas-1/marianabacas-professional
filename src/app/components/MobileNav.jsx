@@ -31,7 +31,7 @@ export default function MobileNav() {
     router.push('/login');
   }
 
-  const navbarItems = [{itemName: 'Inicio', href: '/'}, {itemName: 'Shiatsu Biodinámico', href: '/shiatsu-biodinamico'}, {itemName: 'Escuela Virtual', href: '/escuela-virtual'}, {itemName: 'Contacto', href: '/contact'}]
+  const navbarItems = [{itemName: 'Inicio', href: '/'}, {itemName: 'Shiatsu Biodinámico', href: '/shiatsu-biodinamico'}, {itemName: 'Escuela Presencial', href: '/escuela-presencial'}, {itemName: 'Escuela Virtual', href: '/escuela-virtual'}, {itemName: 'Contacto', href: '/contact'}]
 
   const list = (anchor) => (
       <div className="bg-gradient-to-r from-white via-secondary to-primary py-4 px-4">

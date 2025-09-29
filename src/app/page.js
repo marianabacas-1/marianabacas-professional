@@ -130,7 +130,7 @@ export default function Home() {
                 <div className="w-full md:w-2/3">
                   <h3 className="text-2xl font-semibold text-gray-700 mb-4">Mis inicios</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Mi camino comenzó a los 16 años, cuando descubrí el Yoga. Ese primer contacto con el cuerpo y la respiración abrió una búsqueda que continúa hasta hoy.
+                    El primer paso fue a los 16 años cuando comencé a practicar yoga. Me gradué como Tecnóloga en Industrias de alimentos pero no era feliz, estaba descentrada. Me sentía vacía, sin propósito y sin saber qué hacer con mi vida.
                   </p>
                 </div>
               </motion.div>
@@ -157,7 +157,7 @@ export default function Home() {
                 <div className="w-full md:w-2/3">
                   <h3 className="text-2xl font-semibold text-gray-700 mb-4">Un giro inesperado</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Trabajé durante años en oficinas y laboratorios, pero no me sentía plena. El insomnio y la desconexión me llevaron a retomar mi práctica de Yoga.
+                    Mi vida dio un giro de 180° cuando retomé mi práctica de yoga y decidí formarme como profesora. Enseguida supe que era por donde quería caminar y fui recuperando el entusiasmo. Me di cuenta que mi pasión era ayudar a las personas a encontrar su equilibrio y bienestar integral.
                   </p>
                 </div>
               </motion.div>
@@ -192,13 +192,21 @@ export default function Home() {
                 variants={fadeInUp}
                 whileHover={{ y: -5 }}
               >
-                <h3 className="text-xl font-semibold text-gray-700 mb-4">Educación Principal</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <span className="text-primary mr-2">•</span>
-                    <span>Instructora de Yoga y Meditación - Instituto Santa Visión</span>
-                  </li>
-                </ul>
+             <h3 className="text-xl font-semibold text-gray-700 mb-4">Educación Principal</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">•</span>
+                  <span>Osteópata - Centro de Estudios Osteopáticos de Buenos Aires</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">•</span>
+                  <span>Terapeuta Shiatsu - Shiatsu Nuad</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">•</span>
+                  <span>Profesora de Yoga - Centro de Maha Yoga Santa Visión</span>
+                </li>
+              </ul>
               </motion.div>
               
               <motion.div 
@@ -206,13 +214,17 @@ export default function Home() {
                 variants={fadeInUp}
                 whileHover={{ y: -5 }}
               >
-                <h3 className="text-xl font-semibold text-gray-700 mb-4">Especializaciones</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <span className="text-primary mr-2">•</span>
-                    <span>Yoga Terapéutico</span>
-                  </li>
-                </ul>
+              <h3 className="text-xl font-semibold text-gray-700 mb-4">Especializaciones</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">•</span>
+                  <span>Osteopatía Biodinámica con Carolle Dumais</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">•</span>
+                  <span>Yoga Terapéutico y Meditación en Centro de Maha Yoga Santa Visión</span>
+                </li>
+              </ul>
               </motion.div>
             </motion.div>
             

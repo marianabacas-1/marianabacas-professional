@@ -36,10 +36,7 @@ const staggerContainer = {
 export default function Home() {
   return (
 
-      <div className="bg-white py-20">
-        <video id="video" className="relative z-10 w-full mb-8 mx-auto rounded-3xl md:w-2/6" autoPlay muted loop>
-            <source src="mariana_bacas.mp4" type="video/mp4"/>
-        </video>
+      <div className="bg-white pb-20">
            {/* Método Shiatsu Biodinámico Section */}
       <motion.section 
         className="py-16 bg-gray-50"
@@ -48,15 +45,22 @@ export default function Home() {
         viewport={{ once: true, margin: "-100px" }}
         variants={staggerContainer}
       >
+            <motion.div 
+            className="max-w-4xl mx-auto"
+            variants={fadeInUp}
+          >
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-700 mb-12">
+            <span className="text-primary">Método</span> Shiatsu Biodinámico
+          </h2>
+          </motion.div>
+        <video id="video" className="relative z-10 w-full mb-8 mx-auto rounded-3xl md:w-2/6" autoPlay muted loop>
+            <source src="mariana_bacas.mp4" type="video/mp4"/>
+        </video>
         <div className="container mx-auto px-4">
           <motion.div 
             className="max-w-4xl mx-auto"
             variants={fadeInUp}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-700 mb-12">
-              <span className="text-primary">Método</span> Shiatsu Biodinámico
-            </h2>
-            
+          >            
             <motion.div 
               className="bg-white p-8 rounded-xl shadow-lg"
               variants={fadeInUp}

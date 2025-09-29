@@ -79,7 +79,7 @@ export default function Home() {
               transition={{ delay: 0.5, duration: 0.6 }}
             >
               <Image 
-                src="/mariana_bcas.png" 
+                src="/inicio_hero.jpg" 
                 alt="Mariana Bacas" 
                 layout="fill" 
                 objectFit="cover"
@@ -120,7 +120,7 @@ export default function Home() {
                     transition={{ duration: 0.3 }}
                   >
                     <Image 
-                      src="/mariana_bcas.png" 
+                      src="/inicio_camino.jpg" 
                       alt="Inicio del camino" 
                       layout="fill" 
                       objectFit="cover"
@@ -147,7 +147,7 @@ export default function Home() {
                     transition={{ duration: 0.3 }}
                   >
                     <Image 
-                      src="/mariana_bcas.png" 
+                      src="/inicio_giro.jpg" 
                       alt="Transformación" 
                       layout="fill" 
                       objectFit="cover"
@@ -238,7 +238,7 @@ export default function Home() {
                 transition={{ duration: 0.3 }}
               >
                 <Image 
-                  src="/mariana_bcas.png" 
+                  src="/IMG-20230723-WA0035 (1).jpg" 
                   alt="Mariana Bacas en formación" 
                   layout="fill" 
                   objectFit="cover"

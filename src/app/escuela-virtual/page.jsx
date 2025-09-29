@@ -1,105 +1,169 @@
 "use client";
 import React from 'react';
-import Image from 'next/image';
-import PrimaryButton from '../components/primaryButton';
+import { motion } from 'framer-motion';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export default function EscuelaVirtual() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative pb-4 pt-20 pb-4 bg-gradient-to-b from-gray-50 to-white">
+      <motion.section 
+        className="relative pb-4 pt-20 bg-gradient-to-b from-gray-50 to-white"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+          <motion.div 
+            className="max-w-4xl mx-auto text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
               Escuela de <span className="text-primary">Shiatsu Biodinámico®</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl text-gray-600 mb-8">Modalidad Virtual</h2>
-            <div className="w-32 h-1 bg-primary mx-auto mb-12"></div>
-          </div>
+            <motion.h2 
+              className="text-2xl md:text-3xl text-gray-600 mb-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+            >
+              Modalidad Virtual
+            </motion.h2>
+            <motion.div 
+              className="w-32 h-1 bg-primary mx-auto mb-12"
+              initial={{ scaleX: 0 }}
+              animate={{ scaleX: 1 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+            ></motion.div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
-      {/* Descripción Principal */}
-      <section className="py-16 bg-white">
+      {/* Main Content */}
+      <motion.section 
+        className="py-16 bg-white"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg text-gray-700">
-              <p className="text-xl mb-6">
-                La modalidad virtual de la Escuela de Shiatsu Biodinámico® fue creada para expandir el acceso a esta formación, sin perder la calidad, la profundidad ni el acompañamiento que caracterizan nuestro método. Está pensada para quienes desean formarse profesionalmente desde cualquier lugar, integrando teoría, práctica y reflexión en un formato flexible y cuidadosamente diseñado.
-              </p>
-              <p className="mb-6">
-                El programa combina clases grabadas, encuentros en vivo, materiales de estudio y espacios de supervisión, permitiendo que cada estudiante avance a su ritmo, con seguimiento personalizado y una comunidad de aprendizaje activa.
-              </p>
+              <motion.p 
+                className="text-xl mb-6"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2, duration: 0.6 }}
+              >
+                La Escuela de Shiatsu Biodinámico® en su modalidad virtual es una propuesta innovadora que combina la profundidad del aprendizaje con la flexibilidad que ofrece la tecnología. A través de una plataforma intuitiva y dinámica, los estudiantes acceden a clases en vivo, material didáctico exclusivo y un espacio de práctica supervisada, sin importar su ubicación geográfica.
+              </motion.p>
+              
+              <motion.p 
+                className="mb-6"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3, duration: 0.6 }}
+              >
+                El programa está diseñado para que puedas formarte a tu ritmo, con el acompañamiento personalizado y la riqueza del aprendizaje grupal. Cada módulo incluye clases teóricas, demostraciones prácticas, espacios de consulta y ejercicios vivenciales que te permitirán integrar los conocimientos de manera progresiva.
+              </motion.p>
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      {/* Sección de Temáticas */}
-      <section className="py-16 bg-gray-50">
+      {/* Features Section */}
+      <motion.section 
+        className="py-16 bg-gray-50"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <motion.div 
+            className="max-w-4xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+          >
             <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-              Lo que <span className="text-primary">aprenderás</span>
+              Beneficios de la modalidad virtual
             </h2>
-            <ul className="space-y-4 text-lg text-gray-700">
-              <li className="flex items-start">
-                <span className="text-primary mr-3">•</span>
-                <span>Fundamentos del Shiatsu, la visión biodinámica de la osteopatía y la práctica de yoga para desarrollar la consciencia y el cuidado personal del cuerpo</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-3">•</span>
-                <span>Anatomía energética y emocional</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-3">•</span>
-                <span>Lectura corporal y escucha profunda</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-3">•</span>
-                <span>Técnicas de contacto consciente y regulación del sistema nervioso</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-3">•</span>
-                <span>Prácticas guiadas y estudio de casos</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-3">•</span>
-                <span>Integración somática y rituales de cierre</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* A quién va dirigido */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-primary/10 p-8 rounded-lg">
-              <h2 className="text-2xl font-bold text-gray-800 mb-6">¿A quién está dirigido?</h2>
-              <p className="text-lg text-gray-700 mb-6">
-                La escuela virtual está dirigida a terapeutas, profesionales del bienestar, docentes y personas interesadas en el Trabajo corporal como camino de transformación. No se requiere experiencia previa, solo compromiso, apertura y disposición para aprender desde el cuerpo y la presencia.
-              </p>
-              <p className="text-lg text-gray-700">
-                El objetivo es formar profesionales capaces de sostener espacios de Cuidado, transformación y profundidad, con una mirada integradora y respetuosa. Si buscás una formación seria, flexible y transformadora, esta modalidad puede ser tu puerta de entrada.
-              </p>
+            
+            <div className="grid md:grid-cols-2 gap-8 text-gray-700">
+              {[
+                "Flexibilidad horaria para adaptarte a tus necesidades",
+                "Acceso desde cualquier lugar del mundo",
+                "Material de estudio disponible 24/7",
+                "Clases en vivo con interacción en tiempo real",
+                "Acompañamiento personalizado",
+                "Comunidad de aprendizaje activa"
+              ].map((benefit, index) => (
+                <motion.div
+                  key={index}
+                  className="flex items-start"
+                  initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1 * index, duration: 0.5 }}
+                >
+                  <span className="text-primary mr-3 mt-1">•</span>
+                  <span>{benefit}</span>
+                </motion.div>
+              ))}
             </div>
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gray-50">
+      <motion.section 
+        className="py-16 bg-white"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">¿Querés comenzar tu viaje?</h2>
-          <p className="text-xl text-gray-600 mb-8">Inscribite ahora y comenza tu formación en Shiatsu Biodinámico®</p>
-          <a 
-          href="https://shiatsu-biodinamico.tiendup.com/" 
-          target="_blank"
-        className="bg-secondary hover:bg-secondaryInt hover:opacity-75 text-white px-4 py-2 rounded-lg shadow hover:shadow-inner">Inscribirme ahora</a>
+          <motion.h2 
+            className="text-3xl font-bold text-gray-800 mb-6"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+          >
+            ¿Querés comenzar tu viaje?
+          </motion.h2>
+          <motion.p 
+            className="text-xl text-gray-600 mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+          >
+            Inscribite ahora y comenza tu formación en Shiatsu Biodinámico®
+          </motion.p>
+          <motion.a 
+            href="https://shiatsu-biodinamico.tiendup.com/" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-secondary hover:bg-secondaryInt hover:opacity-75 text-white px-4 py-2 rounded-lg shadow hover:shadow-inner"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+          >
+            Inscribirme ahora
+          </motion.a>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 }

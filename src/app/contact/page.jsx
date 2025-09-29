@@ -53,7 +53,7 @@ const Contact = () => {
           </h1>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Estoy aquí para responder tus preguntas y acompañarte en tu proceso de bienestar.
+            Estoy aca para responder tus preguntas y acompañarte en tu proceso de bienestar.
           </p>
         </div>
 
@@ -65,17 +65,17 @@ const Contact = () => {
             transition={{ duration: 0.5 }}
             className="bg-white p-8 rounded-2xl shadow-lg"
           >
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">Envíame un mensaje</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">Enviame un mensaje</h2>
             
             {submitStatus === 'success' && (
               <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-6">
-                ¡Mensaje enviado con éxito! Me pondré en contacto contigo pronto.
+                ¡Mensaje generado con éxito! Me pondré en contacto pronto.
               </div>
             )}
             
             {submitStatus === 'error' && (
               <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-6">
-                Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.
+                Hubo un error al generar el mensaje. Por favor, intentalo de nuevo más tarde.
               </div>
             )}
             
@@ -215,7 +215,7 @@ const Contact = () => {
                       rel="noopener noreferrer"
                       className="text-gray-600 hover:text-primary transition-colors"
                     >
-                      @marianabacas.shiatsu
+                      @marianabacas
                     </a>
                   </div>
                 </div>

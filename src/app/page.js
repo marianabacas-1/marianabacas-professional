@@ -13,7 +13,7 @@ export default function Home() {
 
       <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-14 md:py-20 overflow-hidden">
+      <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white z-0"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">

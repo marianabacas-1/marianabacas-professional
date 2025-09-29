@@ -11,7 +11,7 @@ import PromoBanner from '../components/promoBanner';
 export default function Home() {
   return (
 
-      <div className="bg-white">
+      <div className="bg-white py-20">
             <video id="video" className="relative z-10 w-full mx-auto rounded-3xl md:w-2/6" autoPlay muted loop>
             <source src="mariana_bacas.mp4" type="video/mp4"/>
         </video>

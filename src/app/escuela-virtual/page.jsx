@@ -7,7 +7,7 @@ export default function EscuelaVirtual() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative pt-14 pb-4 md:pt-20 pb-4 bg-gradient-to-b from-gray-50 to-white">
+      <section className="relative pb-4 pt-20 pb-4 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">

@@ -120,7 +120,7 @@ export default function Home() {
                     transition={{ duration: 0.3 }}
                   >
                     <Image 
-                      src="/inicio_camino.jpg" 
+                      src="/mi_camino_1.jpg" 
                       alt="Inicio del camino" 
                       layout="fill" 
                       objectFit="cover"
@@ -147,7 +147,7 @@ export default function Home() {
                     transition={{ duration: 0.3 }}
                   >
                     <Image 
-                      src="/inicio_giro.jpg" 
+                      src="/mi_camino_2.jpg" 
                       alt="Transformación" 
                       layout="fill" 
                       objectFit="cover"
